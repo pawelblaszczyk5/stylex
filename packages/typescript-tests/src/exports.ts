@@ -1,7 +1,5 @@
 import * as stylex from '@stylexjs/stylex';
 
-// various functions
-
 export const vars = stylex.defineVars({
   bar: '100%',
   baz: stylex.types.lengthPercentage(100),
@@ -53,8 +51,6 @@ export const viewTransitionClass = stylex.viewTransitionClass({
     animationDuration: '2s',
   },
 });
-
-// styles permutations
 
 export const basic = stylex.create({
   foo: {
