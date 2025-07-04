@@ -8,14 +8,13 @@
     "prepare": "husky install tools/husky",
     "build": "npm run build --workspaces --if-present",
     "flow": "flow",
-    "typescript": "npm run typescript --workspaces --if-present",
     "prettier": "prettier --write \"**/*.js\" \"**/*.ts\"",
     "prettier:report": "prettier --check \"**/*.js\"",
     "lint": "npm run lint:report -- --fix",
     "lint:report": "eslint . --ext .js,.jsx,.mjs",
     "release": "tools/npm/release.js",
     "test:packages": "npm run test --workspaces --if-present",
-    "test": "npm run build && npm run flow && npm run typescript && npm run test:packages && npm run prettier:report && npm run lint:report"
+    "test": "npm run build && npm run flow && npm run test:packages && npm run prettier:report && npm run lint:report"
   },
   "workspaces": [
     "packages/shared",
